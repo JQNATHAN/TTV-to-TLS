@@ -31,3 +31,5 @@ function onClickHandler(info, tab) {
   }); 
   
 };
+
+//WideHardo
