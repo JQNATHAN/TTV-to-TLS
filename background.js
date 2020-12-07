@@ -1,6 +1,6 @@
 var contextMenuItem = {
     "id" : "goToLS",
     "title" : "Open in TwitchLS",
-    "contexts": ["video"]
+    "contexts": ["all"]
 };
 chrome.contextMenus.create(contextMenuItem);
