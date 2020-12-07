@@ -3,7 +3,7 @@ var contextMenus = {};
 contextMenus.createCounterString = 
     chrome.contextMenus.create(
         {"title":"Open with TwitchLS",
-        "contexts" : ["all"], "id": "trihard"
+        "contexts" : ["all"], "id": "trihard", "targetUrlPatterns": ["https://twitch.tv/*"]
         },
         function (){
             if(chrome.runtime.lastError){
