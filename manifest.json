@@ -2,6 +2,9 @@
     "name": "TTV to TLS",
     "version": "1.0.1",
     "description": "A simple extension created to redirect Twitch URLs to their respective TwitchLS equivalents for an ad-free viewing experience.",
+    "icons":{
+      "16": "resources/icon16.png"
+    },
     "background": {
         "scripts": ["background.js"],
         "persistent": false
@@ -16,7 +19,8 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-        "*://*.twitch.tv/*", "tabs", "webNavigation", "storage"
+        "*://*.twitch.tv/*", "tabs", "webNavigation", "storage", "contextMenus"
+        
     ],
     "manifest_version": 2
     

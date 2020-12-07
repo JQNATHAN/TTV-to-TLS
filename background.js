@@ -1,3 +1,6 @@
-chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
-    chrome.tabs.executeScript(null,{file:"content.js"});
-});
+var contextMenuItem = {
+    "id" : "goToLS",
+    "title" : "Open in TwitchLS",
+    "contexts": ["video"]
+};
+chrome.contextMenus.create(contextMenuItem);
